@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bugg86/discord-yawn-bot/issues"
   },
-  "homepage": "https://github.com/bugg86/discord-yawn-bot#readme"
+  "homepage": "https://github.com/bugg86/discord-yawn-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.2.0"
+  }
 }
