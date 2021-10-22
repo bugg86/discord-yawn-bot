@@ -23,13 +23,14 @@ client.on('messageCreate', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) { return; }
 
     const args = message.content.slice(prefix.length).split(" ");
-    // console.log(args.shift().toLowerCase());
     const empty = args.shift();
     const command = args.shift().toLowerCase();
-    console.log(command);
+    // console.log(command);
 
     if(command === 'ping') {
         client.commands.get('ping').execute(message, args);
+    } else if (command === 'start'){
+        client.commands.get('start').execute(message, args);
     } else {
         message.channel.send({content : "That's not a command dumbass."})
     }
